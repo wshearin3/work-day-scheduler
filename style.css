@@ -2,7 +2,21 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
   }
-
+#topBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#saveAllBtn {
+    margin-right: 25px;
+    border: 2px solid black;
+    height: 30px;
+    border-radius: 3px;
+}
+#saveAllBtn:hover {
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
 .hourRow{
     margin: 2px 25px;
     border-radius: 10px;
