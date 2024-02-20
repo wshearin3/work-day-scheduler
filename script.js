@@ -48,11 +48,19 @@ $(function () {
     function saveInput12() {
         localStorage.setItem("twelveOClock", text12Input.val());
     }
+    function saveAllInputs(){
+        localStorage.setItem("nineOClock", text9Input.val());
+        localStorage.setItem("tenOClock", text10Input.val());
+        localStorage.setItem("elevenOClock", text11Input.val());
+        localStorage.setItem("twelveOClock", text12Input.val());
+    }
 // Adding event listeners for hourly buttons to save user inputs
     button9.addEventListener("click", saveInput9);
     button10.addEventListener("click", saveInput10);
     button11.addEventListener("click", saveInput11);
     button12.addEventListener("click", saveInput12);
+
+    saveAllBtn.addEventListener("click", saveAllInputs);
 
 
 
