@@ -7,6 +7,11 @@ clearButton.addEventListener("click", function(){
     localStorage.clear()
 });
 
+
+
+
+
+
 $(function () {
     // TODO: Add a listener for click events on the save button. This code should
     // use the id in the containing time-block as a key to save the user input in
@@ -20,6 +25,16 @@ $(function () {
     // attribute of each time-block be used to conditionally add or remove the
     // past, present, and future classes? How can Day.js be used to get the
     // current hour in 24-hour time?
+
+    let hourNine = document.getElementById("hour9");
+    let hourTen = document.getElementById("hour10");
+    let hourEleven = document.getElementById("hour11");
+    let hourTwelve = document.getElementById("hour12");
+    let hourOne = document.getElementById("hour1");
+    let hourTwo = document.getElementById("hour2");
+    let hourThree = document.getElementById("hour3");
+    let hourFour = document.getElementById("hour4");
+    let hourFive = document.getElementById("hour5");
     //
     // TODO: Add code to get any user input that was saved in localStorage and set
     // the values of the corresponding textarea elements. HINT: How can the id
