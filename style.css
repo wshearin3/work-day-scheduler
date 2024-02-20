@@ -72,39 +72,6 @@ textarea {
  font-size: 15px;
  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-  
-  /* textarea {
-    background: transparent;
-    border: none;
-    resize: none;
-    color: #000000;
-    
-    padding: 10px;
-  }
-  
-  .description {
-    white-space: pre-wrap;
-  }
-  
-  .time-block {
-    border-radius: 15px;
-     }
-  
-  .row {
-    border-top: 1px solid white;
-    
-  }
-  /* .row-time-block {
-    margin: 0px 20px;
-  } */
-
-  
-  /* .hour {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed #000000;
-  } */
   
   .past {
     background-color: rgb(111, 111, 218);
