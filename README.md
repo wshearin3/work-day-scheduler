@@ -22,7 +22,7 @@ N/A
 
 ## Screenshots
 
-![webpage screenshot](./Work Day Scheduler.png)
+![webpage screenshot](./Work%20Day%20Scheduler.png)
 
 ## Link to Webpage
 
