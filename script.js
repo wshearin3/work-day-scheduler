@@ -117,6 +117,9 @@ $(function () {
     let hourThree = document.getElementById("hour3");
     let hourFour = document.getElementById("hour4");
     let hourFive = document.getElementById("hour5");
+
+    
+    
     //
     // TODO: Add code to get any user input that was saved in localStorage and set
     // the values of the corresponding textarea elements. HINT: How can the id
@@ -129,4 +132,13 @@ $(function () {
     // TODO: Add code to display the current date in the header of the page.
     let today = dayjs();
     $('#currentDay').text(today.format('dddd, MMMM D, YYYY, h:mm:ss a'));
+
+    console.log(today);
+    let currentHour = dayjs().hour()
+    console.log(currentHour);
+
+    if (currentHour > 9) {
+        hourNine.setAttribute("class", "hourRow past")
+    }
+
   });

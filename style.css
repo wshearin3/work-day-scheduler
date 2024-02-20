@@ -100,15 +100,15 @@ textarea {
   } */
 
   
-  .hour {
+  /* .hour {
     background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
-  }
+  } */
   
   .past {
-    background-color: navy;
-    color: white;
+    background-color: rgb(111, 111, 218);
+    
   }
   
   .present {
