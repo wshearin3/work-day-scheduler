@@ -137,8 +137,81 @@ $(function () {
     let currentHour = dayjs().hour()
     console.log(currentHour);
 
-    if (currentHour > 9) {
-        hourNine.setAttribute("class", "hourRow past")
+    if (currentHour >= 9 && currentHour < 10) {
+        hourNine.setAttribute("class", "hourRow present")
     }
+    if (currentHour >=10 && currentHour < 11) {
+        hourNine.setAttribute("class", "hourRow past")
+        hourTen.setAttribute("class", "hourRow present")
+    }
+    if (currentHour >=11 && currentHour < 12) {
+        hourNine.setAttribute("class", "hourRow past")
+        hourTen.setAttribute("class", "hourRow past")
+        hourEleven.setAttribute("class", "hourRow present")
+    }
+    if (currentHour >=12 && currentHour < 13) {
+        hourNine.setAttribute("class", "hourRow past")
+        hourTen.setAttribute("class", "hourRow past")
+        hourEleven.setAttribute("class", "hourRow past")
+        hourTwelve.setAttribute("class", "hourRow present")
+    }
+    if (currentHour >=13 && currentHour < 14) {
+        hourNine.setAttribute("class", "hourRow past")
+        hourTen.setAttribute("class", "hourRow past")
+        hourEleven.setAttribute("class", "hourRow past")
+        hourTwelve.setAttribute("class", "hourRow past")
+        hourOne.setAttribute("class", "hourRow present")
+    }
+    if (currentHour >=14 && currentHour < 15) {
+        hourNine.setAttribute("class", "hourRow past")
+        hourTen.setAttribute("class", "hourRow past")
+        hourEleven.setAttribute("class", "hourRow past")
+        hourTwelve.setAttribute("class", "hourRow past")
+        hourOne.setAttribute("class", "hourRow past")
+        hourTwo.setAttribute("class", "hourRow present")
+    }
+    if (currentHour >=15 && currentHour < 16) {
+        hourNine.setAttribute("class", "hourRow past")
+        hourTen.setAttribute("class", "hourRow past")
+        hourEleven.setAttribute("class", "hourRow past")
+        hourTwelve.setAttribute("class", "hourRow past")
+        hourOne.setAttribute("class", "hourRow past")
+        hourTwo.setAttribute("class", "hourRow past")
+        hourThree.setAttribute("class", "hourRow present")
+    }
+    if (currentHour >=16 && currentHour < 17) {
+        hourNine.setAttribute("class", "hourRow past")
+        hourTen.setAttribute("class", "hourRow past")
+        hourEleven.setAttribute("class", "hourRow past")
+        hourTwelve.setAttribute("class", "hourRow past")
+        hourOne.setAttribute("class", "hourRow past")
+        hourTwo.setAttribute("class", "hourRow past")
+        hourThree.setAttribute("class", "hourRow past")
+        hourFour.setAttribute("class", "hourRow present")
+    }
+    if (currentHour >=17 && currentHour < 18) {
+        hourNine.setAttribute("class", "hourRow past")
+        hourTen.setAttribute("class", "hourRow past")
+        hourEleven.setAttribute("class", "hourRow past")
+        hourTwelve.setAttribute("class", "hourRow past")
+        hourOne.setAttribute("class", "hourRow past")
+        hourTwo.setAttribute("class", "hourRow past")
+        hourThree.setAttribute("class", "hourRow past")
+        hourFour.setAttribute("class", "hourRow past")
+        hourFive.setAttribute("class", "hourRow present")
+    }
+    if (currentHour >=18 && currentHour < 24) {
+        hourNine.setAttribute("class", "hourRow past")
+        hourTen.setAttribute("class", "hourRow past")
+        hourEleven.setAttribute("class", "hourRow past")
+        hourTwelve.setAttribute("class", "hourRow past")
+        hourOne.setAttribute("class", "hourRow past")
+        hourTwo.setAttribute("class", "hourRow past")
+        hourThree.setAttribute("class", "hourRow past")
+        hourFour.setAttribute("class", "hourRow past")
+        hourFive.setAttribute("class", "hourRow past")
+    }
+
+    
 
   });
