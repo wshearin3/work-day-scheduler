@@ -99,24 +99,7 @@ $(function () {
 
 // Event listener for save all button    
     saveAllBtn.addEventListener("click", saveAllInputs);
-
-
-
-    // let hourNineBtn = document.getElementById("button9");
-    // let hour9Text = document.getElementById("text9");
-    
-    
-
-    // hourNineBtn.addEventListener("click", function(){
-    //    var inputText9 = $("#text9");
-    //     localStorage.setItem("nineTextInput", hour9Text.val());
-        
-               
-    //     console.log("nineTextInput");
-        
-    // });
-
-    
+  
 
     //
     // TODO: Add code to apply the past, present, or future class to each time
