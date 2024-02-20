@@ -21,16 +21,32 @@ $(function () {
     // time-block containing the button that was clicked? How might the id be
     // useful when saving the description in local storage?
 
-    var text9div = $("#text9")
-
+//Selecting text input ids using jquery
+    let text9Input = $("#text9");
+    let text10Input = $("#text10");
+    let text11Input = $("#text11");
+    let text12Input = $("#text12");
+    
+// Setting text area values on page load from local storage values
     $(document).ready(function() {
-        text9div.val(localStorage.getItem("nineOClock"));
+        text9Input.val(localStorage.getItem("nineOClock"));
+        text10Input.val(localStorage.getItem("tenOClock"));
+        text11Input.val(localStorage.getItem("elevenOClock"));
+        text12Input.val(localStorage.getItem("twelveOClock"));
     })
 
+// Declaring function to save user inputs with separate local storage keys
     function saveInputs() {
-        localStorage.setItem("nineOClock", text9div.val());
+        localStorage.setItem("nineOClock", text9Input.val());
+        localStorage.setItem("tenOClock", text10Input.val());
+        localStorage.setItem("elevenOClock", text11Input.val());
+        localStorage.setItem("twelveOClock", text12Input.val());
     }
+// Adding event listeners for hourly buttons to save user inputs
     button9.addEventListener("click", saveInputs);
+    button10.addEventListener("click", saveInputs);
+    button11.addEventListener("click", saveInputs);
+    button12.addEventListener("click", saveInputs);
 
 
 
